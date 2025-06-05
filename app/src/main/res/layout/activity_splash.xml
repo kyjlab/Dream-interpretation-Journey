@@ -1,22 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center">
 
-<!--    <ImageView-->
-<!--        android:id="@+id/splashLogo"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:src="@mipmap/ic_launcher"-->
-<!--        android:layout_centerInParent="true" />-->
-    <TextView
+    <ImageView
         android:id="@+id/splashLogo"
+        android:layout_width="218dp"
+        android:layout_height="322dp"
+        android:src="@drawable/dream_catcher"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/splashText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="해몽 일지"
-        android:textSize="32px"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        />
-</RelativeLayout>
+        android:textSize="55px"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="30dp"/>
+    <TextView
+        android:id="@+id/splashLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:textSize="45px"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/splashRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="45px"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

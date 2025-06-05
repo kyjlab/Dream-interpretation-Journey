@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1074928255652",
+    "project_id": "dreamjourney-efa97",
+    "storage_bucket": "dreamjourney-efa97.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074928255652:android:b15c628193b529e0a71c31",
+        "android_client_info": {
+          "package_name": "com.example.dreaminterpretationjourney"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcs0CuKV6OgqXf5smGJkcN-iWRRlfmSP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

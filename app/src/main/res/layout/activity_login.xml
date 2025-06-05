@@ -4,6 +4,13 @@
     android:id="@+id/login_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_arrow"
+        android:id="@+id/back_arrow"
+        android:padding="10dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="아이디와 비밀번호를 입력하세요"
+            android:text="이메일과 비밀번호를 입력하세요"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="50sp"/>
@@ -21,11 +28,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="아이디"/>
+            android:text="이메일"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/idEdt"/>
+            android:inputType="textEmailAddress"
+            android:id="@+id/login_edit_email"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,7 +44,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:id="@+id/pwdEdt"/>
+            android:id="@+id/login_edit_pwd"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:backgroundTint="@color/button_color"
+            android:id="@+id/login_button_login"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,10 +61,11 @@
                 android:layout_height="wrap_content"
                 android:text="아직 계정이 없나요?"
                 android:paddingRight="20sp"/>
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="회원 가입"/>
+                android:text="회원 가입"
+                android:id="@+id/login_button_regi"/>
         </LinearLayout>
     </LinearLayout>
 

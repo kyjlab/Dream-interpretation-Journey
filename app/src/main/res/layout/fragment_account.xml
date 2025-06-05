@@ -1,13 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/account_layout"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/white"
+    android:id="@+id/account_fragment">
+
+    <ImageView
+        android:id="@+id/account_image_profile"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/account_circle_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/account_text_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="50sp"
-        android:text="account"/>
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:text="user@example.com"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/account_image_profile" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+<!--    <Button-->
+<!--        android:id="@+id/account_btn_edit"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="104dp"-->
+<!--        android:layout_marginTop="104dp"-->
+<!--        android:backgroundTint="@color/btn_green"-->
+<!--        android:text="내 정보 수정"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:cornerRadius="16dp"-->
+<!--        app:iconPadding="8dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/account_text_email" />-->
+
+    <Button
+        android:id="@+id/account_btn_change_pwd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="104dp"
+        android:backgroundTint="@color/btn_green"
+        android:text="비밀번호 변경"
+        android:textColor="@color/white"
+        app:cornerRadius="16dp"
+        app:iconPadding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/account_text_email" />
+
+    <Button
+        android:id="@+id/account_btn_logout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/btn_green"
+        android:text="로그아웃"
+        android:textColor="@color/white"
+        app:cornerRadius="16dp"
+        app:iconPadding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/account_btn_change_pwd" />
+
+    <Button
+        android:id="@+id/account_btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:background="@android:color/transparent"
+        android:text="회원 탈퇴"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

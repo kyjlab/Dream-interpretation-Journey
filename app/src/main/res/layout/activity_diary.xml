@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/journey_fragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 
     <EditText
         android:id="@+id/diaryEditText"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:hint="일기를 작성하세요"
-        android:gravity="top"
-        android:background="@android:drawable/editbox_background" />
+        android:hint="오늘의 꿈을 적어보세요..." />
 
     <Button
         android:id="@+id/saveButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="저장하기" />
+        android:text="저장"/>
 </LinearLayout>
